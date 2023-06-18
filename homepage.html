@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Home page</title>
+</head>
+
+<body>
+
+  <div class="login-box">
+    <h2>Personal data</h2>
+    <h3 class="userInfo">Name:<p class="user" id="name"></p>
+    </h3>
+    <h3 class="userInfo">Surname:<p class="user" id="surname"></p>
+    </h3>
+    <h3 class="userInfo">Age:<p class="user" id="age"></p>
+    </h3>
+    <button type="button" onclick="logOut()">Log out</button>
+    <button type="button" onclick="deleteAcc()">Delet my account</button>
+    <br>
+    <section class="post_filters">
+      <h1 class="post-title">NEWS LIST</h1>
+      <select id="postLimit">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+      </select>
+    </section>
+
+    <ul id="news-list"></ul>
+  </div>
+
+
+  <script src="request.js"></script>
+  <script src="homepagescript.js"></script>
+</body>
+
+</html>
